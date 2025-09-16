@@ -2,33 +2,28 @@
 Documentation    Esta suite testa o site https://fabianofernandeseventos.com.br/
 Resource         site_resoucers.robot
 Test Setup       Abrir o navegador
-# Test Teardown    Fechar o navegador
+#Test Teardown    Fechar o navegador
 
 
 
 *** Test Cases ***
 Acesso ao Site
-    [Documentation]    Este teste valida o acesso ao site
+    [Documentation]    Este teste valida o acesso ao site https://fabianofernandeseventos.com.br/
     [Tags]             site
-    Acessar o site https://fabianofernandeseventos.com.br/
-    Verificar o título "Fabiano Fernandes Eventos - Buffet e Churrasco"
+    Verificar o título Fabiano Fernandes Eventos - Buffet e Churrasco
 
 Entrar em Contato
     [Tags]             botão
-    Acessar o site https://fabianofernandeseventos.com.br/
+
     Clicar no botão 'Entre em Contato'
 
 # Navegar menus do cabeçalho
 #     [Documentation]    Este teste valida a navegação entre os itens de menu do cabeçalho
 #     [Tags]             menus
 #     Clicar no menu 'Início'
-#     Verficar o título na tela
 #     Clicar no menu 'Serviços'
-#     Verificar o título "Nossos Serviços"
 #     Clicar no menu 'Sobre'
-#     Verificar o título "Sobre Fabiano Fernanfes"
 #     Clicar no menu 'Contato'
-#     Verificar o título "Entre em Contato"
 
 # Acessar instagran
 #     [Documentation]    Este teste valida o direcionamento para o intagran
