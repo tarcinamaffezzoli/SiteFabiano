@@ -17,13 +17,13 @@ Entrar em Contato
 
     Clicar no botão 'Entre em Contato'
 
-# Navegar menus do cabeçalho
-#     [Documentation]    Este teste valida a navegação entre os itens de menu do cabeçalho
-#     [Tags]             menus
-#     Clicar no menu 'Início'
-#     Clicar no menu 'Serviços'
-#     Clicar no menu 'Sobre'
-#     Clicar no menu 'Contato'
+Navegar menus do cabeçalho
+    [Documentation]    Este teste valida a navegação entre os itens de menu do cabeçalho
+    [Tags]             menus
+    Clicar no menu 'Início'
+    Clicar no menu 'Serviços'
+    Clicar no menu 'Sobre'
+    Clicar no menu 'Contato'
 
 # Acessar instagran
 #     [Documentation]    Este teste valida o direcionamento para o intagran
