@@ -15,6 +15,9 @@ ${Início}                  (//h1[normalize-space()='Fabiano Fernandes Eventos']
 ${Botão_Sobre}             (//a[normalize-space()='Sobre'])[1]
 ${Sobre}                   (//h2[normalize-space()='Sobre Fabiano Fernandes Eventos'])[1]
 ${Botão_Contato}           (//a[normalize-space()='Contato'])[1]
+${Botão_Instagran}         //nav[@class='navbar']//a[@aria-label='Instagram']
+${Perfil_Insta}            fabiano.fernandes.75873
+${URL_Instragran}          https://www.instagram.com/fabiano.fernandes.75873/
 
 *** Keywords ***
 Abrir o navegador
@@ -65,3 +68,11 @@ Clicar no menu 'Contato'
     Click Element    locator=${Botão_Contato}
     Sleep    3.0s
     Wait Until Element Is Visible    locator=${Texto_Contato}
+
+Clicar no ícone do cabeçalho
+    Wait Until Element Is Visible    locator=${Botão_Instagran}
+    Click Element    locator=${Botão_Instagran}
+    Switch Window    NEW
+    Wait Until Location Contains    expected=${Perfil_Insta}
+    Sleep    10.0s
+    Location Should Be    url=${URL_Instragran}

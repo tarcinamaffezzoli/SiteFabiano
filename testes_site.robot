@@ -2,7 +2,7 @@
 Documentation    Esta suite testa o site https://fabianofernandeseventos.com.br/
 Resource         site_resoucers.robot
 Test Setup       Abrir o navegador
-#Test Teardown    Fechar o navegador
+Test Teardown    Fechar o navegador
 
 
 
@@ -25,12 +25,10 @@ Navegar menus do cabeçalho
     Clicar no menu 'Sobre'
     Clicar no menu 'Contato'
 
-# Acessar instagran
-#     [Documentation]    Este teste valida o direcionamento para o intagran
-#     [Tags]             direcionamento_1
-#     Clicar no ícone do cabeçalho
-#     Verificar se abre a página do instagran
-#     Verificar se apresenta a página de "fabiano.fernandes.75873"
+Acessar instagran
+    [Documentation]    Este teste valida o direcionamento para o intagran
+    [Tags]             direcionamento_1
+    Clicar no ícone do cabeçalho
 #     Clicar no botão do fale conosco agora
 #     Verificar se abre a página do instagran
 #     Verificar se apresenta a página de "fabiano.fernandes.75873"
