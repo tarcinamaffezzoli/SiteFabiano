@@ -30,9 +30,7 @@ Acessar instagran
     [Documentation]    Este teste valida o direcionamento para o intagran
     [Tags]             direcionamento_1
     Clicar no ícone do cabeçalho
-#     Clicar no botão do fale conosco agora
-#     Verificar se abre a página do instagran
-#     Verificar se apresenta a página de "fabiano.fernandes.75873"
+    Clicar no botão do fale conosco agora
 
 # Acessar facebook
 #     [Documentation]    Este teste valida o direcionamento para o facebook

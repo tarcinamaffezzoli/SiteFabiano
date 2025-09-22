@@ -18,6 +18,7 @@ ${Botão_Contato}           (//a[normalize-space()='Contato'])[1]
 ${Botão_Instagran}         //nav[@class='navbar']//a[@aria-label='Instagram']
 ${Perfil_Insta}            fabiano.fernandes.75873
 ${URL_Instragran}          https://www.instagram.com/fabiano.fernandes.75873/
+${Instragan_contato}       (//div)[37]
 
 *** Keywords ***
 Abrir o navegador
@@ -80,3 +81,14 @@ Clicar no ícone do cabeçalho
     ${janelas}    Get Window Handles
     Switch Window    ${janelas}[0]
     Wait Until Element Is Visible    locator=${nome}
+
+Clicar no botão do fale conosco agora
+    Wait Until Element Is Visible    locator=${Botão_Contato}
+    Click Element    locator=${Botão_Contato}
+    Sleep    3.0s
+    Wait Until Element Is Visible    locator=${Instragan_contato}
+    Click Element    locator=${Instragan_contato}
+    Switch Window    NEW
+    Wait Until Location Contains    expected=${Perfil_Insta}
+    Sleep    3.0s
+    Location Should Be    url=${URL_Instragran}
