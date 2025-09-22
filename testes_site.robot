@@ -36,11 +36,7 @@ Acessar instagran
 #     [Documentation]    Este teste valida o direcionamento para o facebook
 #     [Tags]             direcionamento_2
 #     Clicar no ícone do cabeçalho
-#     Verificar se abre a página do facebook
-#     Verificar se apresenta a página de "Fabiano Fernandes"
 #     Clicar no botão do fale conosco agora
-#     Verificar se abre a página do facebook
-#     Verificar se apresenta a página de "Fabiano Fernandes"
 
 # Acessar whatsap
 #     [Documentation]    Este teste valida o direcionamento para o whatsap

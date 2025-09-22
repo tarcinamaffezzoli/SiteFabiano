@@ -92,3 +92,6 @@ Clicar no botão do fale conosco agora
     Wait Until Location Contains    expected=${Perfil_Insta}
     Sleep    3.0s
     Location Should Be    url=${URL_Instragran}
+    ${janelas}    Get Window Handles
+    Switch Window    ${janelas}[0]
+    Wait Until Element Is Visible    locator=${nome}
