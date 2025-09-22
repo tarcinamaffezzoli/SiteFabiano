@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Esta suite testa o site https://fabianofernandeseventos.com.br/
 Resource         site_resoucers.robot
+Library          SeleniumLibrary
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 

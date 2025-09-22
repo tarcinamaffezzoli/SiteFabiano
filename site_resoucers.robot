@@ -74,5 +74,9 @@ Clicar no ícone do cabeçalho
     Click Element    locator=${Botão_Instagran}
     Switch Window    NEW
     Wait Until Location Contains    expected=${Perfil_Insta}
-    Sleep    10.0s
+    Sleep    3.0s
     Location Should Be    url=${URL_Instragran}
+    Close Window
+    ${janelas}    Get Window Handles
+    Switch Window    ${janelas}[0]
+    Wait Until Element Is Visible    locator=${nome}
