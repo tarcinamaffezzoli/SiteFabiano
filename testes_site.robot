@@ -29,24 +29,20 @@ Navegar menus do cabeçalho
 Acessar instagran
     [Documentation]    Este teste valida o direcionamento para o intagran
     [Tags]             direcionamento_1
-    Clicar no ícone do cabeçalho
-    Clicar no botão do fale conosco agora
+    Clicar no ícone do Instagran no cabeçalho
+    Clicar no botão do Instagran no fale conosco agora
 
-# Acessar facebook
-#     [Documentation]    Este teste valida o direcionamento para o facebook
-#     [Tags]             direcionamento_2
-#     Clicar no ícone do cabeçalho
-#     Clicar no botão do fale conosco agora
+Acessar facebook
+    [Documentation]    Este teste valida o direcionamento para o facebook
+    [Tags]             direcionamento_2
+    Clicar no ícone do facebook no cabeçalho
+    Clicar no botão do facebook no fale conosco agora
 
-# Acessar whatsap
+# Acessar whatsapp
 #     [Documentation]    Este teste valida o direcionamento para o whatsap
 #     [Tags]             direcionamento_3
-#     Clicar no ícone do cabeçalho
-#     Verificar se abre a página do whatsapp
-#     Verificar se apresenta o número "+55 47 99172-7277"
-#     Clicar no botão do fale conosco agora
-#     Verificar se abre a página do whatsapp
-#     Verificar se apresenta o número "+55 47 99172-7277"
+#     Clicar no ícone do whatsapp no cabeçalho
+#     Clicar no botão do whatsapp no fale conosco agora
 
 # Navegar menus do Nossos Serviços
 #     [Tags]             menus_serviços
