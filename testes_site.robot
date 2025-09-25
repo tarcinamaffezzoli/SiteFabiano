@@ -38,16 +38,15 @@ Acessar facebook
     Clicar no ícone do facebook no cabeçalho
     Clicar no botão do facebook no fale conosco agora
 
-# Acessar whatsapp
-#     [Documentation]    Este teste valida o direcionamento para o whatsap
-#     [Tags]             direcionamento_3
-#     Clicar no ícone do whatsapp no cabeçalho
-#     Clicar no botão do whatsapp no fale conosco agora
+Acessar whatsapp
+    [Documentation]    Este teste valida o direcionamento para o whatsap
+    [Tags]             direcionamento_3
+    Clicar no ícone do whatsapp no cabeçalho
+    Clicar no botão do whatsapp no fale conosco agora
 
 # Navegar menus do Nossos Serviços
 #     [Tags]             menus_serviços
 #     Menu 'Casamento'
-#     Verificar se encontra o menu 'Casamento'
 #     Menu 'Formatura'
 #     Verificar se encontra o menu 'Formatura''
 #     Menu 'Primeira Comunhão'

@@ -23,9 +23,9 @@ ${Botão_Facebook_cabeç}     //nav[@class='navbar']//a[@aria-label='Facebook']/
 ${URL_Facebook}             https://www.facebook.com/fabiano.fernandes.75873?locale=pt_BR
 ${Perfil_Face}              fabiano.fernandes.75873
 ${Botão_Facebook_cont}      //a[@class='contact-btn facebook']
-
-
-
+${Botão_Whatsapp_cabeç}     //nav[@class='navbar']//a[@aria-label='WhatsApp']//*[name()='svg']
+${Telefone_Whatsapp}        5547991727277
+${Botão_Whatsapp_cont}      //a[@class='contact-btn whatsapp']
 
 *** Keywords ***
 Abrir o navegador
@@ -130,5 +130,29 @@ Clicar no botão do facebook no fale conosco agora
     Sleep    3.0s
     Location Should Be    url=${URL_Facebook}
     ${janelas}    Get Window Handles
+    Switch Window    ${janelas}[0]
+    Wait Until Element Is Visible    locator=${nome}
+
+    [Documentation]    Este teste valida o direcionamento para o whatsapp
+    
+Clicar no ícone do whatsapp no cabeçalho
+    Wait Until Element Is Visible    locator=${Botão_Whatsapp_cabeç}
+    Click Element    locator=${Botão_Whatsapp_cabeç}
+    Switch Window    NEW
+    Wait Until Location Contains    expected=${Telefone_Whatsapp}    timeout=10s
+    Close Window
+    ${janelas}    Get Window Handles    
+    Switch Window    ${janelas}[0]
+    Wait Until Element Is Visible    locator=${nome}
+
+Clicar no botão do whatsapp no fale conosco agora
+    Wait Until Element Is Visible    locator=${Botão_Contato}
+    Click Element    locator=${Botão_Contato}
+    Scroll Element Into View    locator=${Botão_Whatsapp_cont}
+    Click Element    locator=${Botão_Whatsapp_cont}
+    Switch Window    NEW
+    Wait Until Location Contains    expected=${Telefone_Whatsapp}    timeout=10s
+    Close Window
+    ${janelas}    Get Window Handles    
     Switch Window    ${janelas}[0]
     Wait Until Element Is Visible    locator=${nome}
