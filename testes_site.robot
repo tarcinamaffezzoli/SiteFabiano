@@ -44,16 +44,11 @@ Acessar whatsapp
     Clicar no ícone do whatsapp no cabeçalho
     Clicar no botão do whatsapp no fale conosco agora
 
-# Navegar menus do Nossos Serviços
-#     [Tags]             menus_serviços
-#     Menu 'Casamento'
-#     Menu 'Formatura'
-#     Verificar se encontra o menu 'Formatura''
-#     Menu 'Primeira Comunhão'
-#     Verificar se encontra o menu 'Primeira Comunhão'
-#     Menu 'Aniversário'
-#     Verificar se encontra o menu 'Aniversário'
-#     Menu 'Festas Corporativas'
-#     Verificar se encontra o menu 'Festas Corporativas'
-#     Menu 'Churrascos em Geral'
-#     Verificar se encontra o menu 'Churrascos em Geral'
+Navegar menus do Nossos Serviços
+    [Tags]             menus_serviços
+    Menu 'Casamento'
+    Menu 'Formatura'
+    Menu 'Primeira Comunhão'
+    Menu 'Aniversário'
+    Menu 'Festas Corporativas'
+    Menu 'Churrascos em Geral'

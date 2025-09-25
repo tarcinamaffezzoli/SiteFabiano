@@ -26,6 +26,13 @@ ${Botão_Facebook_cont}      //a[@class='contact-btn facebook']
 ${Botão_Whatsapp_cabeç}     //nav[@class='navbar']//a[@aria-label='WhatsApp']//*[name()='svg']
 ${Telefone_Whatsapp}        5547991727277
 ${Botão_Whatsapp_cont}      //a[@class='contact-btn whatsapp']
+${Botão_Casamentos}         (//a[normalize-space()='Casamentos'])[1]
+${Botão_Formaturas}         (//a[normalize-space()='Formaturas'])[1]
+${Botão_Prim_Comunhão}      (//a[normalize-space()='Primeira Comunhão'])[1]
+${Botão_Aniversários}       (//a[normalize-space()='Aniversários'])[1]
+${Botão_Festas_Corp}        (//a[normalize-space()='Festas Corporativas'])[1]
+${Botão_Churras_Geral}      (//a[normalize-space()='Churrascos em Geral'])[1]
+  
 
 *** Keywords ***
 Abrir o navegador
@@ -156,3 +163,38 @@ Clicar no botão do whatsapp no fale conosco agora
     ${janelas}    Get Window Handles    
     Switch Window    ${janelas}[0]
     Wait Until Element Is Visible    locator=${nome}
+
+Menu 'Casamento'
+    Scroll Element Into View    locator=${Botão_Casamentos}
+    Click Element    locator=${Botão_Casamentos}
+    Wait Until Element Is Visible    locator=${Serviços}
+
+Menu 'Formatura'
+    Scroll Element Into View    locator=${Botão_Formaturas}
+    Click Element    locator=${Botão_Formaturas}
+    Sleep    5.0s
+    Wait Until Element Is Visible    locator=${Serviços}
+
+Menu 'Primeira Comunhão'
+    Scroll Element Into View    locator=${Botão_Prim_Comunhão}
+    Click Element    locator=${Botão_Prim_Comunhão}
+    Sleep    5.0s
+    Wait Until Element Is Visible    locator=${Serviços}
+
+Menu 'Aniversário'
+    Scroll Element Into View    locator=${Botão_Aniversários}
+    Click Element    locator=${Botão_Aniversários}
+    Sleep    5.0s
+    Wait Until Element Is Visible    locator=${Serviços}
+
+Menu 'Festas Corporativas'
+    Scroll Element Into View    locator=${Botão_Festas_Corp}
+    Click Element    locator=${Botão_Festas_Corp}
+    Sleep    5.0s
+    Wait Until Element Is Visible    locator=${Serviços}
+
+Menu 'Churrascos em Geral'
+    Scroll Element Into View    locator=${Botão_Churras_Geral}
+    Click Element    locator=${Botão_Churras_Geral}
+    Sleep    5.0s
+    Wait Until Element Is Visible    locator=${Serviços}
